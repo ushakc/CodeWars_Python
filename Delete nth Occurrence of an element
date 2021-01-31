@@ -1,0 +1,9 @@
+#Delete occurrences of an element if it occurs more than n times
+
+
+def delete_nth(order,max_e):
+    temp = []
+    for i in order:
+        if temp.count(i) < max_e:
+            temp.append(i)
+    return temp
