@@ -1,0 +1,9 @@
+#Write a function that takes two arguments, ppg (points per game) and mpg (minutes per game) and returns a straight extrapolation of ppg per 48 minutes rounded to the nearest tenth. Return 0 if 0.
+
+def nba_extrap(ppg, mpg):
+    if ppg == 0:
+        return 0
+    else:
+        ppg =  (48/mpg)*ppg
+    
+        return round(ppg,1)
