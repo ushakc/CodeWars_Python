@@ -1,0 +1,18 @@
+# There is an array with some numbers. All numbers are equal except for one. Try to find it!
+
+def find_uniq(arr):
+    x= arr[0]
+    y= arr[1]
+    z= arr[3]
+    if x !=y:
+        if x!=z:
+            return x
+        else:
+            return y
+    else:
+        for i in arr:
+            if i != x:
+                return i
+
+
+
