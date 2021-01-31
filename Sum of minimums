@@ -1,0 +1,14 @@
+#Given a 2D list of size m * n. Your task is to find the sum of minimum value in each row.
+
+def sum_of_minimums(numbers):
+    return sum(map(min, numbers))
+
+
+#another approach
+def sum_of_minimums(numbers):
+    total = 0
+    for nums in numbers:
+        total += min(nums)
+    return total
+
+
