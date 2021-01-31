@@ -1,0 +1,20 @@
+#Write an algorithm that takes an array and moves all of the zeros to the end, preserving the order of the other elements.
+
+
+
+
+def move_zeros(array):
+#array = [1,False,2,0,1,'a',"b", 0,False,1,0,3,0,1
+    temp = []
+    count = 0
+    for i in array:
+        if type(i) == bool:
+            temp.append(i)
+        else:
+            if i == 0 or i == 0.0:
+                count = count+1
+            else:
+                temp.append(i)
+    for i in range(count):
+        temp.append(0)
+    return temp
